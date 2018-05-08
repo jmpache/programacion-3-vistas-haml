@@ -4,9 +4,6 @@ require "sinatra/reloader"
 @@year = 2018
 
 get '/' do
-
-  @nombre = 'NOMBRE EN UNA VARIABLE'
-  @arreglo = ['este', 'es', 'un', 'arreglo']
   erb :index
 end
 
@@ -14,8 +11,9 @@ get '/consigna' do
   erb :consigna
 end
 
-get '/referencia' do
-
+get '/iterar' do
+  @numeros = [1, 10, 100, 1000, 10000]
+  erb :iterar
 end
 
 get '/contacto' do
