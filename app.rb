@@ -4,7 +4,7 @@ require "sinatra/reloader"
 @@year = 2018
 
 get '/' do
-  erb :index
+  haml :index
 end
 
 get '/consigna' do
