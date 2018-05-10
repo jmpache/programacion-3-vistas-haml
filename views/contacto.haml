@@ -1,0 +1,14 @@
+%form{:action => "/contacto" method => "post"} 
+  %div
+    %p
+      Nombre:
+    
+    %input{type => "text", name => "nombre"}.ml-2
+  
+  %div.pt-3
+    %p
+      Mensaje:
+    
+    %textarea{name => "mensaje", rows => "4", cols => "50"}.ml-2
+  
+  %input.mt-3{type => "submit", value => "Enviar"}
