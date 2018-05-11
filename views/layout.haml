@@ -35,13 +35,14 @@
       %div.jumbotron
         %div ...... 
 
-         yield 
+         = yield 
 
         %div ......
 
 
       %footer.text-center
-        Copyleft #{@@year}
+        
+        = "Copyleft #{@@year}"
 
 
       %script{src => "/js/bootstrap.min.js"}
