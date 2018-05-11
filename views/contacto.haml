@@ -1,14 +1,14 @@
-%form{:action => "/contacto" method => "post"} 
+%form{action: "/contacto", method: "post"} 
   %div
     %p
       Nombre:
     
-    %input{type => "text", name => "nombre"}.ml-2
+    %input.ml-2{type: "text", name: "nombre"}
   
   %div.pt-3
     %p
       Mensaje:
     
-    %textarea{name => "mensaje", rows => "4", cols => "50"}.ml-2
+    %textarea.ml-2{name: "mensaje", rows: "4", cols: "50"}
   
-  %input.mt-3{type => "submit", value => "Enviar"}
+  %input.mt-3{type: "submit", value: "Enviar"}

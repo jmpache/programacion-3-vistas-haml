@@ -8,7 +8,7 @@ get '/' do
 end
 
 get '/consigna' do
-  erb :consigna
+  haml :consigna
 end
 
 get '/iterar' do
@@ -17,7 +17,7 @@ get '/iterar' do
 end
 
 get '/contacto' do
-  erb :contacto
+  haml :contacto
 end
 
 post '/contacto' do

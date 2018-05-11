@@ -1,43 +1,41 @@
 %html
   %head
     %title Programacion 3 - HAML
-    %link{href => "/css/bootstrap.min.css", rel => "stylesheet"}
+    %link{href:"/css/bootstrap.min.css", rel:"stylesheet"}
   
   %body
-    %div.container
-      %div.header
+    .container
+      .header
         %ul.nav.nav-pills.justify-content-center
           %li.nav-item
-            %a.nav-link{href => "/"}
+            %a.nav-link{href: "/"}
               Inicio
             
           
           %li.nav-item
-            %a.nav-link{href => "/consigna"}
+            %a.nav-link{href: "/consigna"}
               Consigna
             
           
           %li.nav-item
-            %a.nav-link{href="http://haml.info/docs/yardoc/file.REFERENCE.html"}
+            %a.nav-link{href: "http://haml.info/docs/yardoc/file.REFERENCE.html"}
               Referencia de Haml
             
           
           %li.nav-item
-            %a.nav-link{href => "/contacto"}
+            %a.nav-link{href: "/contacto"}
               Contacto
             
           
           %li.nav-item
-            %a.nav-link{href => "/iterar"}
+            %a.nav-link{href: "/iterar"}
               Ejemplo de Iteracion
             
 
-      %div.jumbotron
-        %div ...... 
-
-         = yield 
-
-        %div ......
+      .jumbotron
+        .div
+          = yield 
+        
 
 
       %footer.text-center
@@ -45,4 +43,4 @@
         = "Copyleft #{@@year}"
 
 
-      %script{src => "/js/bootstrap.min.js"}
+      %script{src: "/js/bootstrap.min.js"}
